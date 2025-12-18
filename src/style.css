@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* --------------------------------
+   THEME VARIABLES (DARK / LIGHT)
+---------------------------------- */
+:root {
+    --bg: #0d0d0d;
+    --text: #ffffff;
+    --card: rgba(255, 255, 255, 0.06);
+    --glass: rgba(255, 255, 255, 0.1);
+    --glow: #ffffff;
+}
+
+.light {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --card: rgba(0, 0, 0, 0.05);
+    --glass: rgba(0, 0, 0, 0.08);
+    --glow: #000000;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.5s ease, color 0.5s ease;
+    overflow-x: hidden;
+    
+}
+
+/* --------------------------------
+              NAVBAR
+---------------------------------- */
+.navbar {
+    /* background-image: url(./tall-trees-forest-mountains-covered-with-fog.jpg); */
+    background-position: center;
+    background-size: cover;
+    /* border: 1px solid white; */
+    width: 100%;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: var(--bg);
+    z-index: 999;
+
+}
+
+.logo {
+    /* border: 1px solid white; */
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--glow);
+    transform: scale(1.05);
+}
+
+#theme-toggle {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* --------------------------------
+               HERO
+---------------------------------- */
+.hero {
+    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\images\tall-trees-forest-mountains-covered-with-fog.jpg");
+    background-position: center;    
+    background-size: cover;
+    height: 70vh;
+    padding: 0 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+.hero .heading {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 12px;
+
+}
+
+.subtitle {
+    font-size: 28px;
+    opacity: 0.9;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    color:whitesmoke;
+
+    /* /name section/ */
+}
+
+/* Glow Button */
+.resume-btn {
+
+    margin-top: 18px;
+    padding: 12px 20px;
+    background: var(--text);
+    color: var(--bg);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+    /* font-size: medium; */
+    transition: 0.3s ease;
+     font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.glow:hover {
+
+    box-shadow: 0 0 10px var(--glow), 0 0 22px var(--glow);
+    transform: scale(1.05);
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+     font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+
+.social-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text);
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--glow);
+    transform: scale(1.15);
+
+}
+
+/* --------------------------------
+              About SECTIONS
+---------------------------------- */
+.section {
+    padding: 80px 8%;
+    text-align: center;
+    font-size: large;
+     font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  
+}
+
+/* Glass Sections (About, Contact, Edu, Exp) */
+.glass {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+/* --------------------------------
+              SKILLS
+---------------------------------- */
+.skills-grid {
+
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+    
+}
+
+.skill-card {
+
+    background: var(--card);
+    padding: 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+/* 3D Tilt + Glow */
+.tilt:hover {
+    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\tall-trees-forest-mountains-covered-with-fog.jpg");
+    background-position: center;
+    background-size: cover;
+    /* background-color: black; */
+    transform: rotateX(8deg) rotateY(8deg) scale(1);
+}
+
+/* --------------------------------
+              EXPERIENCE
+---------------------------------- */
+.exp-card {
+    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\paper.jpg");
+    background-position: center;
+    background-size: cover;
+    /* background: var(--card); */
+    padding: 22px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+    
+}
+.exp-card:hover {
+
+    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\paper.jpg");
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.03);
+    color: black;
+    font-size: 18px;
+    /* width: 90%; */
+}
+
+
+.exp-card ul {
+     font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+    margin-top: 12px;
+    text-align: center;
+    list-style: circle;
+    list-style-position: inside;
+    line-height: 2;
+}
+
+/* --------------------------------
+              PROJECTS
+---------------------------------- */
+.project-card {
+
+    /* background: var(--card); */
+    border: 0.9px solid gray;
+    /* opacity: 0.6; */
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: 0.4s ease;
+}
+
+.project-card:hover {
+
+    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\abstract.jpg");
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.03);
+    color: white;
+}
+
+#education {
+
+    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\paper.jpg");
+    background-position: center;
+    background-size: cover;
+    /* background: var(--card); */
+    padding: 24px 12px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: 0.4s ease;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#education:hover {
+
+    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\paper.jpg");
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.03);
+    color: black;
+    /* width: 90%; */
+}
+
+/* contacts */
+#contact {
+    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\paper.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 24px 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#contact:hover {
+
+    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\paper.jpg");
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.03);
+    color: black;
+}
+
+/* --------------------------------
+          SCROLL REVEAL ANIMATIONS
+---------------------------------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --------------------------------
+              FOOTER
+---------------------------------- */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    opacity: 0.7;
+    font-size: 14px;
+}
