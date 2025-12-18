@@ -18,7 +18,9 @@ export default function Projects() {
   ];
 
   return (
+    
     <section id="projects" className="section reveal">
+      
       <h2 className="anim-text">Projects</h2>
 
       {projects.map((p, index) => (
