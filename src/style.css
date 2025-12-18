@@ -93,7 +93,7 @@ body {
 ---------------------------------- */
 .hero {
     /* background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\images\tall-trees-forest-mountains-covered-with-fog.jpg"); */
-    background-image: url("/images/tall-trees.jpg");
+      background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\tall-trees.jpg");
     background-position: center;    
     background-size: cover;
     height: 70vh;
@@ -221,7 +221,7 @@ body {
 
 /* 3D Tilt + Glow */
 .tilt:hover {
-    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\tall-trees-forest-mountains-covered-with-fog.jpg");
+    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\tall-trees.jpg");
     background-position: center;
     background-size: cover;
     /* background-color: black; */
