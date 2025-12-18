@@ -91,9 +91,9 @@ body {
 ---------------------------------- */
 .hero {
    
-    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\tall-trees.jpg");
-    background-size: cover;
-    background-position: center;
+    /* background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\tall-trees.jpg"); */
+    /* background-size: cover;
+    background-position: center; */
     height: 70vh;
     padding: 0 8%;
     display: flex;
