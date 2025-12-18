@@ -93,7 +93,10 @@ body {
 ---------------------------------- */
 .hero {
     /* background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\images\tall-trees-forest-mountains-covered-with-fog.jpg"); */
-      background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\tall-trees.jpg");
+    background-image: url("%PUBLIC_URL%/tall-trees.jpg");
+
+  background-size: cover;
+  background-position: center;
     background-position: center;    
     background-size: cover;
     height: 70vh;
