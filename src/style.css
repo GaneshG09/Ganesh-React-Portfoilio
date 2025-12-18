@@ -150,7 +150,7 @@ body {
 }
 
 /* Social Links */
-.social-links {
+#social-links {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -219,7 +219,7 @@ body {
 
 /* 3D Tilt + Glow */
 .tilt:hover {
-    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\tall-trees.jpg");
+    background-image: url("C:\Users\Dell\Desktop\react portfolio\react-portfolio\public\programmer.jpg");
     background-position: center;
     background-size: cover;
     /* background-color: black; */
@@ -247,7 +247,7 @@ body {
     background-position: center;
     background-size: cover;
     transform: scale(1.03);
-    color: black;
+    color: white;
     font-size: 18px;
     /* width: 90%; */
 }

@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 
 export default function Hero() {
   useEffect(() => {
-    gsap.from("#hero-title", {
+    gsap.from("#hero1", {
       y: -300,
       opacity: 0,
       duration: 1,
@@ -24,13 +24,13 @@ export default function Hero() {
       id="hero"
       className="hero reveal"
       style={{
-        backgroundImage: "url(/tall-trees.jpg)",
+        backgroundImage: "url(/light.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "70vh",
       }}
     >
-      <h1 id="hero-title">Hi, I'm Ganesh Gaikwad</h1>
+      <h1  id="hero1">Hi, I'm Ganesh Gaikwad</h1>
 
       <p className="subtitle anim-text">
         Turning ideas into smooth, scalable web applications.
@@ -40,7 +40,7 @@ export default function Hero() {
         Download Resume
       </a>
 
-      <div className="social-links">
+      <div className="social-links" >
         <a href="https://github.com/ganeshg09" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/ganesh-gaikwad06" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://leetcode.com/u/ganeshgaikwad/" target="_blank" rel="noreferrer">LeetCode</a>
